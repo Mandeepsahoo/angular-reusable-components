@@ -1,1 +1,23 @@
-<p>collections-home works!</p>
+<app-divider [title]="'Table Component'"></app-divider>
+<app-table
+  [data]="data"
+  [headers]="headers"
+  [classNames]="'celled striped'"
+></app-table>
+
+<app-divider [title]="'Tab Menu'"></app-divider>
+<app-tabs>
+  <a
+    routerLink="./"
+    routerLinkActive="active"
+    class="item"
+    [routerLinkActiveOptions]="{ exact: true }"
+    >Biography</a
+  >
+  <a routerLink="./companies" routerLinkActive="active" class="item"
+    >companies</a
+  >
+  <a routerLink="./partners" routerLinkActive="active" class="item"
+    >partners</a
+  ></app-tabs
+>
